@@ -1,0 +1,52 @@
+.App{
+
+  padding: 15dvh;
+
+  .planityTestContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+    padding:50px 30px;
+    width:30%;
+    margin:0 auto;
+    border-radius: 10px;
+
+    img{
+      height: 150px;
+      padding: 0;
+    }
+
+    .progressBar{
+      height:30px;
+      width:300px;
+      background-color: rgb(186, 186, 186);
+      margin-top: 50px;
+
+      .progress{
+        height: 100%;
+        background-color: black;
+      }
+    }
+
+    input{
+      display: none;
+    }
+
+    .uploadFileButton{
+      background-color: black;
+      color:white;
+      padding:10px 50px;
+      border-radius: 5px;
+      margin-top: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+    }
+
+    a.invisibleLink{
+      display: none;
+    }
+
+  }
+}

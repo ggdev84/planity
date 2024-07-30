@@ -1,0 +1,22 @@
+{
+  "name": "planity",
+  "version": "1.0.0",
+  "description": "Planity back-end",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd planity-front && npm run build",
+    "start": "npm run build && npx tsx index.ts"
+  },
+  "author": "Gorkem GUL",
+  "license": "GPL-2.0-only",
+  "dependencies": {
+    "@types/archiver": "^6.0.2",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
+    "archiver": "^7.0.1",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "typescript": "^5.5.4"
+  }
+}
