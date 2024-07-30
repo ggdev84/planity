@@ -1,12 +1,17 @@
 import express from "express"
 import archiver from "archiver"
 import fs from "fs/promises"
-import {createReadStream, createWriteStream, WriteStream, ReadStream} from "fs"
+import {createReadStream, createWriteStream, WriteStream, ReadStream, existsSync} from "fs"
 import multer from "multer"
 
 
 const csvReqHandler = express.Router()
 const archiverTool = archiver("zip")
+
+if(!existsSync(__dirname + "/csvFiles")){
+    fs.mkdir(__dirname + "/csvFiles")
+}
+
 
 export const storage:multer.StorageEngine =  multer.diskStorage({
     destination:(req, file, callback)=>{
